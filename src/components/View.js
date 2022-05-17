@@ -10,7 +10,7 @@ export const View = ({contacts,deleteContact}) => {
             <td>{contact.zipcode}</td>
             <td>{contact.name}</td>
             <td>{contact.contactnumber}</td>
-            <td className='delete-btn' onClick={()=>deleteContact(contact.isbn)}>
+            <td className='delete-btn' onClick={()=>deleteContact(contact.id)}>
                 <Icon icon={trash}/>
             </td>           
         </tr>            
