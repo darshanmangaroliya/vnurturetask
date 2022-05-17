@@ -3,7 +3,7 @@ import { View } from "./components/View";
 
 // getting the values of local storage
 const getDatafromLS = () => {
-  const data = localStorage.getItem("books");
+  const data = localStorage.getItem("contact");
   if (data) {
     return JSON.parse(data);
   } else {
@@ -63,7 +63,7 @@ export const App = () => {
 
   // saving data to local storage
   useEffect(() => {
-    localStorage.setItem("books", JSON.stringify(contacts));
+    localStorage.setItem("contact", JSON.stringify(contacts));
   }, [contacts]);
 
   return (
